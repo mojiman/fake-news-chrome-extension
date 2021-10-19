@@ -1,0 +1,42 @@
+{
+    "name": "Thai Fake News Checker",
+    "version":  "3.0",
+    "description": "This extension can check if Thai news articles are fake or not, based on the Goverment source",
+    "manifest_version": 2, 
+    
+    "icons": {
+        "16" : "/images/grey16.png",
+        "48" : "/images/grey48.png",
+        "128" : "/images/grey128.png"
+    },
+
+    "permissions": ["https://flask-fakenews.herokuapp.com/*", "tabs"],
+
+    
+
+    "web_accessible_resources": [
+        "/cute-alert-master/img/error.svg",
+        "/cute-alert-master/img/info.svg",
+        "/cute-alert-master/img/question.svg",
+        "/cute-alert-master/img/success.svg",
+        "/cute-alert-master/img/warning.svg" 
+    ],
+    
+
+    "content_scripts": [
+        {
+        "matches" : ["<all_urls>"],
+        "css" : ["/cute-alert-master/style.css"],
+        "js" : ["/cute-alert-master/cute-alert.js" ,"content.js"]
+        }
+    ],
+    "browser_action": {
+        "default_popup" : "popup.html",
+        "default_title" : "Thai Fake News Checker"
+    },
+    
+    "background": {
+        "scripts": ["background.js"]
+    }
+
+}

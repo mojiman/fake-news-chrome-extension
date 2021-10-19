@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Popup
+    </title>
+    <style>
+
+    div {
+        margin: auto;
+        width: 90%;
+        padding: 10px;
+    }
+
+    .center {
+    text-align: center;    
+    }
+
+    .underline{
+    border-bottom: 1px solid gainsboro;
+    }
+
+    .underline2{
+    border-bottom: 5px solid gainsboro;
+    }
+
+
+    .center2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    }
+
+    button {
+    background-color: #8ebf42;
+    color: white;
+    border: none;
+    cursor: grabbing;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    }
+
+    button:hover {
+    opacity: 0.8;
+    }
+
+    body {
+    min-width: 200px; /* your desired width */
+    min-height: 250px;
+    max-height: 100%;
+    max-width: 100%;
+    background-color: lightcyan;
+    }
+      
+    h2 {
+        padding: 0;
+        margin: 0;
+        cursor: grabbing;
+    }
+    h3{
+        padding: 0;
+        margin: 0;
+    }
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="underline2">
+    
+    <h2 class = "center"> Thai Fake News Checkers extension</h2>
+    
+    </div>
+    <div class = "popupbox">
+        <div class="underline">
+            <h3 class = "center"> Check fake news </h3>
+            <br>
+            <button class="center2" id="check-news"> Check </button>
+        </div>
+        <div>
+            <h3 class = "center"> Report fake news </h3>
+            <br>
+            <button class="center2" id="report-news"> Report </button>
+        </div>
+
+        <script src="popup.js"></script>
+        <br>
+    </div>
+</body>
+</html>
